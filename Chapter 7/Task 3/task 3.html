@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task1
+        </title>
+    </head>
+    <body>
+        <script>
+            var arr = [];
+        while(true){
+            var a = parseInt(prompt("Введите число:"));
+            if(a===0){
+                break;
+            }
+            arr.push(a);
+        }
+        var ans ="";
+        for(i=0;i<arr.length;i++){
+            if(arr[i]>0){
+                ans=ans+arr[i]+" "
+            }
+        }
+        alert(ans);
+        </script>
+    </body>
+</html>

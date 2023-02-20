@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task1
+        </title>
+    </head>
+    <body>
+        <script>
+            var arr = [];
+        while(true){
+            var a = parseInt(prompt("Введите число:"));
+            if(a===0){
+                break;
+            }
+            arr.push(a);
+        }
+        var b=1;
+        for(i=0;i<arr.length;i++){
+            b=b*arr[i];
+        }
+        var q= Math.pow(b,1/arr.length);
+        alert(q);
+        </script>
+    </body>
+</html>

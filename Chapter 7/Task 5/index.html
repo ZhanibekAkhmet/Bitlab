@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task 5
+        </title>
+    </head>
+    <body>
+        <script>
+          var cars = [
+
+{"name":"Toyota", "price": 12000000, "year": 2015, "volume": 2.2},
+
+{"name":"Mercedes", "price": 70000000, "year": 2018, "volume": 3.8},
+
+{"name":"Toyota", "price": 7000000, "year": 2013, "volume": 2.0},
+
+{"name":"BMW", "price": 11000000, "year": 2011, "volume": 3.0},
+
+{"name":"Lexus", "price": 60000000, "year": 2017 ,"volume": 5.7}
+
+];
+            while(true){
+                var a=parseInt(prompt("INSERT [1] TO SEARCH BY NAME\nINSERT [2] TO SEARCH BY YEAR\nINSERT [3] TO SEARCH BY ENGINE VOLUME\nINSERT [4] TO SEARCH BY PRICE\nINSERT [5] TO EXIT"))
+                if(a==1){
+                    var b = prompt("INSERT NAME OF CAR:");
+                    var ans="";
+                    for(i=0;i<cars.length;i++){
+                        if(b==cars[i]["name"]){
+                            ans=ans+cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+                        }
+                    }
+                    alert(ans)
+                }else if(a==2){
+                    var x=parseInt(prompt("INSERT YEAR START FROM:"));
+                    var y=parseInt(prompt("INSERT YEAR ENDS FROM:"));
+                    var an="";
+                    for(i=0;i<cars.length;i++){
+                        if(cars[i]["year"]>=x&&cars[i]["year"]<=y){
+                            an=an+cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+                        }
+                    }
+                    alert(an);
+                }else if(a==3){
+                    var q=parseInt(prompt("INSERT ENGINE VOLUME START FROM:"));
+                    var w=parseInt(prompt("INSERT ENGINE VOLUME ENDS FROM:"));
+                    var anr="";
+                    for(i=0;i<cars.length;i++){
+                        if(cars[i]["volume"]>=q&&cars[i]["volume"]<=w){
+                            anr=anr+cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+                        }
+                    }
+                    alert(anr);
+                }else if(a==4){
+                    var g=parseInt(prompt("INSERT PRICE START FROM:"));
+                    var h=parseInt(prompt("INSERT PRICE ENDS FROM:"));
+                    var ant="";
+                    for(i=0;i<cars.length;i++){
+                        if(cars[i]["price"]>=g&&cars[i]["price"]<=h){
+                            ant=ant+cars[i]["name"] + " - " + cars[i]["price"]+" - " + cars[i]["year"]+ " - " + cars[i]["volume"]+" liters\n";
+                        }
+                    }
+                    alert(ant);
+                }else if(a==0){
+                    break;
+                }else alert("NOT CORRECTED NUMBER")
+            }
+        </script>
+    </body>
+</html>

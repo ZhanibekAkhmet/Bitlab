@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task1
+        </title>
+    </head>
+    <body>
+        <script>
+            var users = [
+
+                {"login":"ilyas", "password": "qwerty"},
+
+                {"login":"eldar", "password": "qqqqq"},
+
+                {"login":"assylkhan", "password": "qweqwe"},
+
+                {"login":"anel", "password": "asdasd"},
+
+                {"login":"alibek", "password": "aaaaaa"}
+
+                                            ];
+            var a = prompt("Введите логин");
+            var b = prompt("Введите пароль");
+            var c = false;
+            for(var i=0;i<users.length;i++){
+                if(users[i]["login"]==a&&users[i]["password"]==b){
+                    c=true;
+                }
+            }
+            if(c==true){
+                alert("Welcome, you are authenticated");
+            }else alert("User not found");
+        </script>
+    </body>
+</html>

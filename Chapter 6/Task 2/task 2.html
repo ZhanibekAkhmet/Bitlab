@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task1
+        </title>
+    </head>
+    <body>
+        <script>
+           var a = parseInt(prompt("Число элементов: ")) 
+           var nums= [];
+            for(i = 0;i<a;i++){
+                nums[i]=parseInt(prompt("элемент:")) 
+            }
+            var max=nums[0];
+            for(i=0;i<a;i++){
+                if(nums[i]>max){
+                    max=nums[i];
+                }
+            }
+            alert(max);
+        </script>
+    </body>
+</html>

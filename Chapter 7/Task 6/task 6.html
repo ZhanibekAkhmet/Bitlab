@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task 6
+        </title>
+    </head>
+    <body>
+        <script>
+            var arr=[];
+            while(true){
+                var a=parseInt(prompt("PRESS 1 TO ADD STUDENT\nPRESS 2 TO LIST STUDENT\nPRESS 0 TO EXIT\n"))
+                if(a==1){
+                    var q = prompt("INSERT NAME:");
+                    var w = prompt("INSERT SURNAME:");
+                    var e = prompt("INSERT GPA:");
+                    var ar={q,w,e};
+                    arr.push(ar);
+                }else if(a==2){
+                    var text="";
+                    arr.forEach((ar)=>{
+                        text=text+ar.q+" "+ar.w+" "+ar.e+"\n";
+                    })
+                    alert(text);
+                }else if(a==0){
+                    break;
+                }else alert("NOT CORRECTED NUMBER")
+            }
+        </script>
+    </body>
+</html>

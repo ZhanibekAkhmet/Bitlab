@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task1
+        </title>
+    </head>
+    <body>
+        <script>
+           var a = parseInt(prompt("Число элементов: ")) 
+           var nums= [];
+            for(i = 0;i<a;i++){
+                nums[i]=parseInt(prompt("элемент:")) 
+            }
+            var sum=0;
+            var k=0;
+            for(i=0;i<a;i++){
+                k=k+1;
+                sum=sum+nums[i];
+            }
+            var sr = sum/k;
+            alert(sum+" "+sr);
+        </script>
+    </body>
+</html>

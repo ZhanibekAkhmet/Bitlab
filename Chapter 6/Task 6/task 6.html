@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task 6
+        </title>
+    </head>
+    <body>
+        <script>
+            var users = [
+
+                {"Наименование":"Harry Potter and the Philosopher's Stone", "Автор": "Joanne Rowling","ISBN":"1233123","Цена":"50$"},
+
+                {"Наименование":"Harry Potter and the Chamber of Secrets", "Автор": "Joanne Rowling","ISBN":"222332","Цена":"40$"},
+
+                {"Наименование":"Harry Potter and the Prisoner of Azkaban", "Автор": "Joanne Rowling","ISBN":"452323","Цена":"55$"},
+
+                {"Наименование":"Волки из Мерси-Фоллз. Превращение", "Автор": "Мэгги Стивотер","ISBN":"1111111","Цена":"30$"},
+
+                {"Наименование":"Игра в обороне", "Автор": "Кендалл Райан","ISBN":"3333333","Цена":"10$"},
+
+                {"Наименование":"Боги и чудовища", "Автор": "Кендалл Райан","ISBN":"44444444","Цена":"20$"},
+
+                {"Наименование":"Кот из Фоллз. Прерождение", "Автор": "Мэгги Стивотер","ISBN":"2222222","Цена":"32$"}
+
+                                            ];
+            var a = prompt("Введите автора");
+            var c = false;
+            var ans = "";
+            for(var i=0;i<users.length;i++){
+                if(users[i]["Автор"]==a){
+                    ans=ans+users[i]["Автор"]+" - "+users[i]["Наименование"]+" - "+users[i]["ISBN"]+" - "+users[i]["Цена"]+"\n";
+                }
+            }
+            
+            alert(ans);
+        </script>
+    </body>
+</html>

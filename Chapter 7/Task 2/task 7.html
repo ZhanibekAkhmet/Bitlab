@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task1
+        </title>
+    </head>
+    <body>
+        <script>
+         const numbers = [];
+    let input;
+
+while (true) {
+  input = Number(prompt("Введите число:"));
+  if (input === 0) {
+    break; // прерываем цикл, если пользователь ввел 0
+  }
+  numbers.push(input); // добавляем число в массив, если оно не равно 0
+}
+
+if (numbers.length === 0) {
+  console.log("Массив пуст");
+} else {
+  const product = numbers.reduce((a, b) => a * b);
+  const geometricMean = Math.pow(product, 1 / numbers.length);
+    alert(`Геометрическая средняя введенных чисел: ${geometricMean}`);
+}
+        </script>
+    </body>
+</html>
